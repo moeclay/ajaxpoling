@@ -19,7 +19,7 @@
 				success: function(data){
 					status.text('Offline!');
 					if(data.live){
-						status.text(data.info.data.length);
+						status.text(data.info.data[0].nama);
 						clearinterval(pollInterval);
 					}
 				},
